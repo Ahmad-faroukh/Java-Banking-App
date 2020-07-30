@@ -1,0 +1,25 @@
+Query : select * from admins 
+ADMIN ID : ahmad Logged In @ 2019/05/14/ 11:32:21
+Query : com.mysql.jdbc.JDBC42PreparedStatement@410ac179: insert into users (account_id,password,name,gender,phone,email) values ('2222222222','e9f6af2ef8239d3b74e408205ecda93a','test2','2','0598888888','test2@email.com')
+Account With ID : 2222222222 Has Been Added @ 2019/05/14/ 11:34:06
+Query : delete from users where account_id =
+Account With ID :  Has Been Deleted @ 2019/05/14/ 11:35:26
+Query : select account_id , password from users
+USER ID : 0123456789 Logged In @ 2019/05/14/ 11:36:32
+Query : com.mysql.jdbc.JDBC42PreparedStatement@49513d73: update users set balance =1080.88 where account_id=0123456789
+Account With ID : 0123456789 Deposted 1080.88
+Query : select account_id , password from users
+USER ID : 0123456789 Logged In @ 2019/05/14/ 11:38:43
+Query : com.mysql.jdbc.JDBC42PreparedStatement@7fe81bfc: update users set balance =1380.88 where account_id=0123456789
+Account With ID : 0123456789 Deposted 300
+Query : com.mysql.jdbc.JDBC42PreparedStatement@1231070: update users set balance =1230.88 where account_id=0123456789
+Account With ID : 0123456789 Withdrew 150
+Query : com.mysql.jdbc.JDBC42PreparedStatement@40fed4ec: update users set balance =1215.88 where account_id=0123456789
+Query : com.mysql.jdbc.JDBC42PreparedStatement@811deb9: update users set balance =415.66 where account_id=1020304050
+Account With ID : 0123456789Transferd 15 To 1020304050 @ 2019/05/14/ 11:39:41
+Query : com.mysql.jdbc.JDBC42PreparedStatement@65bd3010: update users set password = MD5('password') where account_id = '0123456789'
+Account With ID : 0123456789Changed His Password @ 2019/05/14/ 11:40:45
+Query : select account_id , password from users
+USER ID : 0123456789 Logged In @ 2019/05/14/ 11:40:55
+Query : com.mysql.jdbc.JDBC42PreparedStatement@42513059: UPDATE users SET name = 'ahmad', phone = '0598347573', email = 'ahmad@email.com' WHERE account_id = '0123456789'
+Account With ID : 0123456789 Changed His Info 
